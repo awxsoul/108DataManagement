@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>108 Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="box">
+        <div id="head">
+            <div id="headone">
+                <div id="line1">108 AMBULANCE</div>
+                <div id="line2">Database Management System</div>
+            </div>
+        </div>
+        <div id="control">
+            <form action="/" method="POST">
+                <input type="text" name="stext" id="searchbar" placeholder=" Search">
+                <input type="submit" id="searchbutton" value="Search">
+                <div id="searchin">
+                    <label for="search">Search for :</label>
+                    <select name="searching" id="searching" value="pat">
+                        <option value="pat">Patient</option>
+                        <option value="hos">Hospital</option>
+                        <option value="amb">Ambulance</option>
+                        <option value="call">Call ID</option>
+                    </select>
+                </div>
+                <!-- <div id="sortby">
+                    <label for="sort">Sort by :</label>
+                    <select name="sorting" id="sorting">
+                        <option value="volvo">Date</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div> -->
+            </form>
+        </div>
+        <div id="texttittle">Entries Recorded</div>
+        <div id="results">
+                {% for info in data %}
+                <div class="listing" name="list">
+                    <div id="id">{{info[5]}}</div>
+                    <div id="date">{{info[20]}}</div>
+                    <div id="name">{{info[17]}}</div>
+                    <div id="dob">DOB : {{info[18]}}</div>
+                    <div id="gen">Gender : {{info[19]}}</div>
+                    <div id="hospital">Admitted : {{info[13]}}</div>
+                    <div id="doctor">{{info[15]}}</div>
+                    <div id="patientid">PID:{{info[16]}}</div>
+                    <div id="amb">Amb: {{info[1]}} - {{info[2]}} - Call from : {{info[6]}}</div>
+                </div>
+                {% endfor %}
+
+        </div>
+
+    </div>
+</body>
+</html>

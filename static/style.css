@@ -1,0 +1,240 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    
+}
+
+#box {
+    height: 95vh;
+    width: 95vw;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 2vh;
+    border-color: black;
+    border: 1px;
+    border-style:double;
+    overflow: hidden;
+}
+
+#head {
+    height: 10%;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    position: relative;
+}
+
+#line1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 3vh;
+}
+
+#line2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 2vh;
+}
+
+
+#headone {
+    height: 80%;
+    width: 50%;
+    background-color: rgba(127, 255, 212, 0);
+    position: absolute;
+    top: 50%;
+    left: 2vw;
+    transform: translate(0%,-50%);
+}
+
+
+
+#control {
+    height: 5%;
+    width: 100%;
+    background-color: rgba(0, 255, 85, 0);
+    position: relative;
+    
+}
+
+#searchbar {
+    height: 70%;
+    width: 28%;
+    background-color: rgba(127, 255, 212, 0);
+    position: absolute;
+    top: 50%;
+    left: 2vw;
+    border-radius: 25px;
+    transform: translate(0%,-50%);
+    
+}
+
+#searchbutton {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    transform: translate(0%,-50%);
+
+}
+
+#searchin {
+    height: 50%;
+    width: 15%;
+    left: 40%;
+    background-color: rgba(255, 127, 206, 0);
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+#sortby {
+    height: 50%;
+    width: 10%;
+    left: 50%;
+    background-color: rgba(255, 127, 206, 0);
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+#texttittle {
+    height: 4%;
+    width: 100%;
+    background-color: rgba(0, 106, 255, 0);
+    position: relative;
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+#results {
+    height: 81%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    position: relative;
+    overflow-y: scroll;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.listing{
+    
+    height: 30%;
+    width: 29%;
+    margin: 1%;
+    padding: 1%;
+    border: 1px;
+    border-radius: 1vh;
+    border-style: dashed;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+.more {
+    position: absolute;
+    right: 2vw;
+    transform: translate(0%,-100%);
+}
+
+#boxright{
+    height: 100%;
+    width: 40%;
+    right: 0;
+    background-color: rgba(37, 138, 197, 0);
+    position: absolute;
+
+}
+
+#id {
+    position: absolute;
+    
+    height: 10%;
+    width: 12%;
+    top: 5%;
+}
+
+#date {
+    position: absolute;
+    
+    height: 10%;
+    width: 35%;
+    right: 0%;
+    
+    top: 5%;
+}
+
+#name {
+    position: absolute;
+    
+    top: 20%;
+    height: 15%;
+    width: 90%;
+    font-size: 3vh;
+    font-weight: 800;
+}
+
+#dob {
+    position: absolute;
+    
+    height: 10%;
+    width: 45%;
+    top: 40%;
+}
+
+#gen {
+    position: absolute;
+    
+    height: 10%;
+    width: 25%;
+    right: 0%;
+    
+    top: 40%;
+}
+
+#hospital {
+    position: absolute;
+    
+    top: 55%;
+    height: 10%;
+    width: 90%;
+    overflow: hidden;
+    font-weight: 600;
+
+}
+
+#doctor {
+    position: absolute;
+    
+    height: 10%;
+    width: 65%;
+    top: 70%;
+    font-weight: 900;
+}
+
+#patientid {
+    position: absolute;
+    
+    height: 10%;
+    width: 25%;
+    right: 0%;
+    
+    top: 70%;
+}
+
+#amb {
+    position: absolute;
+    
+    height: 10%;
+    width: 90%;
+    top: 85%;
+}
+
+
+
